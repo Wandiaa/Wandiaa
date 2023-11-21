@@ -1,0 +1,54 @@
+import java .util.Scanner;
+public class Scores{
+public static void main (String[] args){
+Scanner input = new Scanner(System.in);
+int javaProgrammingScore,netwrokingScore,structuredCablingScore,humanComputerInteractionScore,applicationProgrammingScore;
+int average Score;
+String Grade;
+
+System.out.println("Enter score for java programming");
+javaProgrammingScore = input.nextlnt();
+
+System.out.println("Enter score for networking");
+networkingScore = input.nextlnt();
+
+System.out.println("Enter score for structuredCabling");
+structuredCablingScore = input.nextlnt();
+
+System.out.println("Enter score for humanComputerInteraction");
+humanComputerInteractionScore = input.nextlnt();
+
+System.out.println("Enter score for applicationProgramming");
+applicationProgrammingScore = input.nextlnt();
+
+averageScore = (javaProgrammingScore + networkingScore + structuredCablingScore + humanComputerInteractionScore + applicationProgrammingScore);
+
+if (averageScore >=70){
+grade = "A";
+}
+if (averageScore >=60){
+grade = "B";
+}
+if (averageScore >=50){
+grade = "C";
+}
+if (averageScore >=40){
+grade = "D";
+}
+else{
+grade = "Fail";
+}
+
+System.out.println("The average Score is" + averageScore + " , and the grade is" + grade");
+}
+}
+
+
+
+
+
+
+
+
+
+
